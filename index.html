@@ -1,159 +1,90 @@
-%
-% �� pdflatex ����, TeXLive 2017 ����ͨ��, 2018.11
-%
-\documentclass[11pt,a4paper]{ctexart}
-\usepackage[a4paper,textwidth=15cm,textheight=23cm,left=3cm]{geometry}
-
-\usepackage{CJKspace}
-\usepackage{graphicx,xcolor}
-\usepackage{hyperref}
-\hypersetup{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue,breaklinks=true}
-
-\usepackage{lastpage}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\fancyfoot[RO,LE]{{\footnotesize $\cdot$\ \thepage\ / \pageref{LastPage} $\cdot$}}
-
-% ���ýڵı����ʽ�����壬��С����ɫ��
-\CTEXsetup[name={,}]{section}
-\CTEXsetup[number={}]{section}
-\CTEXsetup[format={\raggedright\color{blue}\heiti\large}]{section}
-\CTEXsetup[nameformat={\color{blue}}]{section}
-\CTEXsetup[aftername={}]{section}
-\CTEXsetup[afterskip={1.0ex plus 1ex minus 0.2ex}]{section}
-
-% �����б�
-\newenvironment{blist}%
-    {\begin{list}{{\hfill\raisebox{1.12pt}{$\bullet$}}}{%
-     \leftmargin2.6em\labelwidth1.5em\labelsep0.5em
-     \itemsep0pt\itemindent0pt\parsep0pt\topsep0.5em}}
-    {\end{list}}
-
-% �Զ�������
-\newcommand{\Name}[1]{\noindent{\color{blue}\LARGE\heiti #1}}
-\newcommand{\Title}[1]{{\ \songti\large #1}}
-\newcommand{\Line}{\par\noindent{\color{green}{\rule[1ex]{\textwidth}{0.5ex}}}\vspace{-1em}}
-
-
-\begin{document}
-
-\Name{��С��}
-\Title{��ʿ} \Line
-
-\section{��ϵ��ʽ}
-\begin{tabular}{rl}
-  ͨ�ŵ�ַ:  & �Ϻ���XX��XX· xxx ��, XXX��ѧXXXѧԺ, 200241\\
-  �绰:      & 021-xxxxxxxx \\
-  Email:     & abc123@ecnu.edu.cn
-\end{tabular}
-
-
-\section{������Ϣ}
-\begin{tabular}{rllrl}
-  �Ա�:& �� & \hspace{2cm}   &   ����: & �й�
-\end{tabular}
-
-
-\section{��������}
-\begin{tabular}{ll}
-  1998.09 -- 2001.06 & ѧУ, Ժϵ, ���� \\
-  1998.09 -- 2001.06 & ѧУ, Ժϵ, ˶ʿ \\
-  1998.09 -- 2001.06 & ѧУ, Ժϵ, ��ʿ
-\end{tabular}
-
-
-\section{ʵ������}
-\begin{tabular}{ll}
-  1998.09 -- 2001.06 & ���ݷ���ʦ, ĳĳ��˾ \\
-  1998.09 -- 2001.06 & �����о�Ա, ĳĳĳ��˾\\
-  1998.09 -- 2001.06 & �ܹ�ʦ, ĳĳĳĳ��˾
-\end{tabular} 
-
-
-\section{�о���Ȥ}
-\begin{blist}
-  \item ��ѧ��ѧ��ѧ
-  \item ��ѧ��ѧ��ѧ��ѧ
-\end{blist}
-
-
-\section{������}
-\begin{tabular}{ll}
-  1998.09 & ѧУ, ����ѧ�� \\
-  1998.09 & ѧУ, һ�Ƚ�ѧ�� \\
-  1998.09 & ѧУ, ����ѧ���ɲ�
-\end{tabular}
-
-\section{���Լ���}
-\begin{blist}
-  \item Ӣ��: ��ѧӢ������
-  \item ����: ��������
-\end{blist}
-
-\section{���������}
-\begin{blist}
-  \item ����ϵͳ: Windows, Linux
-  \item �������: C/C++, Fortran, Matlab, Mathematica, Python
-  \item �Ű�����: \LaTeX{}, Word
-\end{blist}
-
-
-%%%%% ===== ���гɹ� =====
-\linespread{1.1}\selectfont
-
-\CTEXoptions[bibname={ѧ������}]
-\begin{thebibliography}{99}
-
-\bibitem{Ale81}
-\newblock G. Alexander,
-\newblock \emph{Kronecker Products and Matrix Calculus},
-\newblock Ellis Horwood Limited, England, 1981.
-
-\bibitem{BZS92}
-\newblock C. Brezinski, M. R. Zaglia and H. Sadok,
-\newblock A breakdown-free Lanczos type algorithm for solving linear systems,
-\newblock \emph{Numerische Mathematik}, (63) 1992, 29--38.
-
-\bibitem{Ale81}
-\newblock G. Alexander,
-\newblock \emph{Kronecker Products and Matrix Calculus},
-\newblock Ellis Horwood Limited, England, 1981.
-
-\bibitem{BZS92}
-\newblock C. Brezinski, M. R. Zaglia and H. Sadok,
-\newblock A breakdown-free Lanczos type algorithm for solving linear systems,
-\newblock \emph{Numerische Mathematik}, (63) 1992, 29--38.
-
-\end{thebibliography}
-
-
-\CTEXoptions[bibname={ѧ������}]
-\begin{thebibliography}{99}
-
-\bibitem{Ale81}
-\newblock G. Alexander,
-\newblock \emph{Kronecker Products and Matrix Calculus},
-\newblock Ellis Horwood Limited, England, 1981.
-
-\bibitem{BZS92}
-\newblock C. Brezinski, M. R. Zaglia and H. Sadok,
-\newblock A breakdown-free Lanczos type algorithm for solving linear systems,
-\newblock \emph{Numerische Mathematik}, (63) 1992, 29--38.
-
-\bibitem{Ale81}
-\newblock G. Alexander,
-\newblock \emph{Kronecker Products and Matrix Calculus},
-\newblock Ellis Horwood Limited, England, 1981.
-
-\bibitem{BZS92}
-\newblock C. Brezinski, M. R. Zaglia and H. Sadok,
-\newblock A breakdown-free Lanczos type algorithm for solving linear systems,
-\newblock \emph{Numerische Mathematik}, (63) 1992, 29--38.
-
-\end{thebibliography}
-
-
-\end{document}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+    
+    h2 {
+      margin-top: 20px;
+      color: #333333;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-weight: bold;
+    }
+    
+    .section-content {
+      margin-left: 20px;
+    }
+    
+    .section-content p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>个人简历</h1>
+    
+    <div class="section">
+      <h2>个人信息</h2>
+      <div class="section-content">
+        <p><span class="section-title">姓名：</span>张三</p>
+        <p><span class="section-title">性别：</span>男</p>
+        <p><span class="section-title">出生日期：</span>1990年1月1日</p>
+        <p><span class="section-title">联系电话：</span>123456789</p>
+        <p><span class="section-title">邮箱：</span>zhangsan@example.com</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>教育背景</h2>
+      <div class="section-content">
+        <p><span class="section-title">学校：</span>ABC大学</p>
+        <p><span class="section-title">专业：</span>计算机科学与技术</p>
+        <p><span class="section-title">学位：</span>学士</p>
+        <p><span class="section-title">时间：</span>2010年-2014年</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>工作经历</h2>
+      <div class="section-content">
+        <p><span class="section-title">公司：</span>XYZ公司</p>
+        <p><span class="section-title">职位：</span>前端开发工程师</p>
+        <p><span class="section-title">时间：</span>2015年-至今</p>
+        <p><span class="section-title">工作内容：</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non enim vel est blandit consequat.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
