@@ -18,6 +18,7 @@
       padding: 30px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative; /* 添加相对定位 */
     }
     
     h1 {
@@ -52,10 +53,12 @@
 
     .profile-img {
       width: 150px;
-      height: auto;
+      height: 150px;
       border-radius: 50%;
-      margin: 0 auto;
-      display: block;
+      position: absolute; /* 添加绝对定位 */
+      top: 20px; /* 调整顶部间距 */
+      right: 20px; /* 调整右侧间距 */
+      object-fit: cover; /* 确保图片比例合适并填满容器 */
     }
   </style>
 </head>
@@ -91,7 +94,7 @@
         <p><span class="section-title">微信公众号：</span>ESRG技录橙</p>
         <p><span class="section-title">百家号：</span>环西南游</p>
         <p><span class="section-title">哔哩哔哩：</span>ESRG技录橙</p>
-        <p><span class="section-title">社交简介：</span>”看见光，追随光，成为光，发散光“</p>
+        <p><span class="section-title">工作内容：</span>“看见光，追随光，成为光，发散光”————Engineering students record growth</p>
       </div>
     </div>
   </div>
